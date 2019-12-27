@@ -1,1 +1,67 @@
-<p>form works!</p>
+<form>
+    <div class="form-group">
+      <label >Email address</label>
+      <input type="email" class="form-control"  placeholder="name@example.com">
+    </div>
+    <div class="form-group">
+      <label >What is Your Industry?</label>
+      <select class="form-control" >
+        <option value="">Select Industry</option>
+        <option>Food / Drink</option>
+        <option>Apparel / Accessories / Shoes</option>
+        <option>Non-profit</option>
+        <option>Professional Services</option>
+        <option>Restaurant</option>
+        <option>Tech / Hardward</option>
+        <option>Tech / Software </option>
+        <option>Other</option>
+      </select>
+      <div *ngIf="other">
+        <input type="text" placeholder="Enter Your Field">
+      </div>
+    </div>
+
+    <div class="form-group">
+        <label>What is Your Company Size?</label>
+        <select class="form-control">
+            <option value="">Select Number of Employees</option>
+            <option value="1">1 (just myself)</option>
+            <option value="2-10">2-10 employees</option>
+            <option value="11-20">11-20 employees</option>
+            <option value="21-50">21-50 employees</option>
+            <option value="50+">50+ employees</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>What is Your Company Size?</label>
+        <select class="form-control">
+            <option value="">Select Number of Years</option>
+            <option value="1"> &lt; 1 years</option>
+            <option value="1-2">1-2 years</option>
+            <option value="3-5">3-5 years</option>
+            <option value="6-10">6-10 years</option>
+        </select>
+    </div>
+    
+    <div class="form-group">
+        <label>What is your full revenue last month? What is your full revenue this month? (If you’re in the middle of this month or beginning, chose last month where you have full revenue)</label>
+        <input type="number" placeholder="Enter Revenue">
+    </div>
+
+    <div class="form-group">
+        <label>What is your product margin?</label><br>
+        <input type="number" placeholder="Enter Product Margin">
+    </div>
+
+    <div class="form-group">
+        <label>What is your business spend/expenses last month?</label><br>
+        <input type="number" placeholder="Enter Business Expenses">
+    </div>
+
+    <div class="form-group">
+        <label>What is your cash balance?</label><br>
+        <input type="number" placeholder="Enter Cash Balence">
+    </div>
+
+    </form>
